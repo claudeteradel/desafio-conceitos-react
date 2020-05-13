@@ -34,7 +34,7 @@ function App() {
 
       const repositoryIndex = repositories.findIndex(repository => repository.id == id);
 
-      if (repositoryIndex > 0){
+      if (repositoryIndex >= 0){
         repositories.splice(repositoryIndex, 1);
         setRepository([...repositories]);
       }
